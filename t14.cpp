@@ -18,7 +18,7 @@ float endprice(string category, int people, float budget)
 {
     if (people <= 4 && category == "VIP")
     {
-        float total = (budget * 0.75) + 499.9;
+        float total = (budget * 0.75) + (499.9*people);
         if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -33,7 +33,7 @@ float endprice(string category, int people, float budget)
     
     if (people <= 4 && category == "Normal")
     {
-        float total = ((budget * 0.75) + 249.99);
+        float total = (budget * 0.75) + (249.99*people);
         if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -48,7 +48,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 5 && people <= 9) && category == "VIP")
     {
-        float total = ((budget * 0.60) + 499.9);
+        float total = (budget * 0.60) + (people*499.9);
         if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -63,7 +63,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 5 && people <= 9) && category == "Normal")
     {
-        float total = ((budget * 0.60) + 249.99);
+        float total = (budget * 0.60) + (people*249.99);
         if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -78,7 +78,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 10 && people <= 24) && category == "VIP")
     {
-        float total = ((budget * 0.50) + 499.9);
+        float total = (budget * 0.50) + (people*499.9);
         if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -93,7 +93,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 10 && people <= 24) && category == "Normal")
     {
-        float total =  ((budget * 0.50) + 249.99);
+        float total =  (budget * 0.50) + (people*249.99);
          if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -108,7 +108,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 25 && people <= 49) && category == "VIP")
     {
-        float total = ((budget * 0.40) + 499.9);
+        float total = (budget * 0.40) + (people*499.9);
             if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -123,7 +123,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 25 && people <= 49) && category == "Normal")
     {
-        float total =  ((budget * 0.40) + 249.99);
+        float total =  (budget * 0.40) + (people*249.99);
             if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -138,7 +138,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 50) && category == "VIP")
     {
-        float total = ((budget * 0.25) + 499.9);
+        float total = (budget * 0.25) + (people*499.9);
         if(total>budget)
 		{
 			float ftotal = total - budget;
@@ -153,7 +153,7 @@ float endprice(string category, int people, float budget)
     
     if ((people >= 25 && people <= 49) && category == "Normal")
     {
-        float total = ((budget * 0.25)+ 249.99);
+        float total = (budget * 0.25)+ (people*249.99);
         if(total>budget)
 		{
 			float ftotal = total - budget;
